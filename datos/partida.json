@@ -1,0 +1,17 @@
+[
+    {
+        "tipo": "Guerrero",
+        "nombre": "Guts",
+        "vida": 60
+    },
+    {
+        "tipo": "Mago",
+        "nombre": "Harry",
+        "vida": 50
+    },
+    {
+        "tipo": "Arquero",
+        "nombre": "Legolas",
+        "vida": 43
+    }
+]
