@@ -18,23 +18,26 @@ def recuperar():
 
     for p in datos:
         if p["tipo"] == "Guerrero":
-            personajes.append(
-                Guerrero(
-                    p["nombre"],
-                    p["vida"]
-                ))
-        elif p["tipo"] == "Mago":
-            personajes.append(
-                Mago(
-                    p["nombre"],
-                    p["vida"]
-                ))
-        elif p["tipo"] == "Arquero":
-            personajes.append(
-                Arquero(
-                    p["nombre"],
-                    p["vida"]
-                ))
+            personaje = Guerrero(
+                p["nombre"],
+                p["vida"]
+            )
             
+        elif p["tipo"] == "Mago":
+            personaje = Mago(
+                p["nombre"],
+                p["vida"]
+            )
+
+        elif p["tipo"] == "Arquero":
+            personaje = Arquero(
+                p["nombre"],
+                p["vida"]
+            )
+        
+        
+        personaje.vidaMax = p.get("vidaMax", p["vida"])
+
+        personajes.append(personaje)
     return personajes
     

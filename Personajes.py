@@ -22,7 +22,8 @@ class Personajes:
         return {
             "tipo": self.__class__.__name__,            
             "nombre": self.nombre,
-            "vida" : self.vida
+            "vida" : self.vida,
+            "vidaMax": self.vidaMax
         }
     
 class Guerrero(Personajes):
